@@ -34,7 +34,7 @@ export function searchPosts(query: string): SearchResult[] {
     }
 
     // Search in content
-    if (post.content.toLowerCase().includes(searchTerm)) {
+    if (post.content?.toLowerCase().includes(searchTerm)) {
       score += 3;
     }
 

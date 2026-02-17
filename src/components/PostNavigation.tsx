@@ -59,7 +59,7 @@ export default function PostNavigation({ content }: PostNavigationProps) {
 
       // If we're past all headings, use the last one
       if (!activeHeading && headingElements.length > 0) {
-        activeHeading = headingElements[headingElements.length - 1].id;
+        activeHeading = headingElements[headingElements.length - 1]?.id ?? '';
       }
 
       if (activeHeading) {
