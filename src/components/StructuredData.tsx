@@ -1,7 +1,8 @@
 import { generateStructuredData } from '@/lib/seo'
+import { Post } from '@/data/posts'
 
 interface StructuredDataProps {
-  post?: any
+  post?: Post
 }
 
 export default function StructuredData({ post }: StructuredDataProps) {

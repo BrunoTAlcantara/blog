@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import PostCard from '@/components/PostCard';
 import StructuredData from '@/components/StructuredData';
 import LanguageToggle from '@/components/LanguageToggle';
@@ -22,9 +23,9 @@ export default function Home() {
         {/* Navigation */}
         <nav className="flex items-center justify-between mb-16 font-medium-sans">
           <div className="flex items-center gap-6 text-sm">
-            <a href="/" className="text-[var(--color-medium-light-text)] dark:text-[var(--color-medium-dark-text)] font-semibold hover:text-[var(--color-medium-light-green)] dark:hover:text-[var(--color-medium-dark-green)] transition-colors">
+            <Link href="/" className="text-[var(--color-medium-light-text)] dark:text-[var(--color-medium-dark-text)] font-semibold hover:text-[var(--color-medium-light-green)] dark:hover:text-[var(--color-medium-dark-green)] transition-colors">
               Home
-            </a>
+            </Link>
             <a href="#posts" className="text-[var(--color-medium-light-muted)] dark:text-[var(--color-medium-dark-muted)] hover:text-[var(--color-medium-light-text)] dark:hover:text-[var(--color-medium-dark-text)] transition-colors">
               Posts
             </a>

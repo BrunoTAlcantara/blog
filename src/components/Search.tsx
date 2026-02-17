@@ -138,7 +138,7 @@ export default function Search() {
           className="absolute top-full left-0 right-0 mt-1 bg-[var(--color-medium-light-bg)] dark:bg-[var(--color-medium-dark-bg)] border border-[var(--color-medium-light-border)] dark:border-[var(--color-medium-dark-border)] rounded-lg shadow-lg z-50 p-3"
         >
               <p className="text-sm text-[var(--color-medium-light-muted)] dark:text-[var(--color-medium-dark-muted)] text-center">
-                {t('search.noResults')} "{query}"
+                {t('search.noResults')} &ldquo;{query}&rdquo;
               </p>
         </div>
       )}
