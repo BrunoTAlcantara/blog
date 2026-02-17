@@ -49,7 +49,7 @@ export default function PostNavigation({ content }: PostNavigationProps) {
         if (element && element.offsetTop > scrollTop) {
           // If this is the first heading below scroll position, use the previous one
           if (i > 0) {
-            activeHeading = headingElements[i - 1].id;
+            activeHeading = headingElements[i - 1]?.id ?? element.id;
           } else {
             activeHeading = element.id;
           }
