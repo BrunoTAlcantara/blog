@@ -49,6 +49,7 @@ export default async function PostPage({ params }: PostPageProps) {
 
   return (
     <div className="min-h-screen bg-[var(--color-medium-light-bg)] dark:bg-[var(--color-medium-dark-bg)] transition-colors duration-200">
+      <div className="grain-overlay" aria-hidden="true" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

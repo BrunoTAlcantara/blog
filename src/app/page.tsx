@@ -19,6 +19,9 @@ export default function Home() {
       {/* Ukiyo-e wave background */}
       <div className="ukiyo-waves" aria-hidden="true" />
 
+      {/* Fine grain texture */}
+      <div className="grain-overlay" aria-hidden="true" />
+
       <main className="max-w-2xl mx-auto px-6 py-16 relative z-10">
         {/* Navigation */}
         <nav className="flex items-center justify-between mb-16 font-medium-sans">
